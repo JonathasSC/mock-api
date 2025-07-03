@@ -133,9 +133,9 @@ GET /contracts/12345678900/2004/12/28?error=403
 ```
 src/
 ├── routes/
-│   ├── contractsRoutes.ts
-│   ├── installmentsRoutes.ts
-│   └── receiptsRoutes.ts
+│   ├── contracts.ts
+│   ├── installments.ts
+│   └── receipts.ts
 ├── middlewares/
 │   └── simulateError.ts
 ├── tests/
