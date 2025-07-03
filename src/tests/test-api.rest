@@ -1,0 +1,39 @@
+### Obter contratos válidos
+GET http://localhost:3000/contracts/12345678900/2004/12/28
+Content-Type: application/json
+
+###
+
+### Obter contratos com identificação inválida (sem contratos)
+GET http://localhost:3000/contracts/00000000000/2004/12/28
+Content-Type: application/json
+
+###
+
+### Obter contratos simulando erro 401
+GET http://localhost:3000/contracts/12345678900/2004/12/28?error=401
+Content-Type: application/json
+
+###
+
+### Buscar parcelas do contrato
+GET http://localhost:3000/installments/12345678900/242570089
+Content-Type: application/json
+
+###
+
+### Buscar parcelas simulando erro 408
+GET http://localhost:3000/installments/12345678900/242570089?error=408
+Content-Type: application/json
+
+###
+
+### Obter boleto em PDF
+GET http://localhost:3000/receipts/12345678900/242570089/3
+Content-Type: application/json
+
+###
+
+### Obter boleto simulando erro 403
+GET http://localhost:3000/receipts/12345678900/242570089/3?error=403
+Content-Type: application/json
